@@ -1,12 +1,19 @@
+//输入描述
+//输入包含一个八位整数 NN，表示日期。
+//
+//对于所有评测用例，10000101 \leq N \leq 8999123110000101≤N≤89991231，保证 NN 是一个合法日期的 8 位数表示。
+//
+//输出描述
+//输出两行，每行 1 个八位数。第一行表示下一个回文日期，第二行表示下一个 ABABBABA 型的回文日期。
 #include <iostream>
 using namespace std;
 
-//�����ж�
+//闰年判断
 bool leapyear(int y)
 {
     return ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0));
 }
-//��������Ƿ���ϸ�ʽ
+//检查日期是否符合格式
 bool check(int year, int month, int day)
 {
     if (month > 12 || month <= 0)
