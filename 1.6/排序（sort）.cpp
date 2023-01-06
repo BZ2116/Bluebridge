@@ -1,5 +1,5 @@
 #include <iostream>
-#include <algorithm>//sort ÔÚÕâ¸öÍ·ÎÄ¼þÖÐ
+#include <algorithm>//sort åœ¨è¿™ä¸ªå¤´æ–‡ä»¶ä¸­
 
 using namespace std;
 
@@ -7,14 +7,14 @@ int main()
 {
 	int n, a[200];
 	cin >> n;
-	//ÊäÈëÊý×éÖÐµÄÊý¾Ý
+	//è¾“å…¥æ•°ç»„ä¸­çš„æ•°æ®
 	for (int i = 0; i < n; i++)
 	{
 		cin >> a[i];
 	}
 
-	//ÅÅÐò
-	//»¹¿ÉÒÔÓÃÃ°ÅÝÅÅÐò
+	//æŽ’åº
+	//è¿˜å¯ä»¥ç”¨å†’æ³¡æŽ’åº
 /*	for (int l = 0; l < n - 1; l++)
 	{
 		for (int j = 0; j < n - 1 - l; j++)
@@ -27,7 +27,7 @@ int main()
 			}
 		}
 	}*/
-	//sort Ö±½Ó¸ã
+	//sort ç›´æŽ¥æž
 	sort(a, a + n);
 	for (int i = 0; i < n; i++)
 	{
